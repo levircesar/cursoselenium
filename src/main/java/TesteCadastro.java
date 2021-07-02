@@ -61,7 +61,6 @@ public class TesteCadastro {
 	@Test
 	public void deveValidarSexoObrigatorio(){
 		page.setNome("Nome qualquer");
-		page.cadastrar();
 		page.setSobrenome("Sobrenome qualquer");
 		page.cadastrar();
 		Assert.assertEquals("Sexo eh obrigatorio", dsl.alertaObterTextoEAceita());
